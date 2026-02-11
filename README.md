@@ -14,11 +14,15 @@ But Python's mathematical might doesn't stop there. The SymPy library brings sym
 
 Python Virtual Machine (PVM) plays an important role in managing and executing your code but it doesn't directly perform mathematical calculations itself; instead, it relies on specialized libraries like NumPy and SciPy which provide highly optimized routines written in C/C++ that are executed efficiently by modern processors to handle most of the heavy lifting when it comes to numerical computations. This layered approach allows Python users to write code at a higher level without having to be concerned with low-level implementation details while still benefiting from fast, efficient execution thanks to these underlying optimized routines designed specifically for scientific computing tasks in mind.
 
+--------
+
 When you run a Python script, it goes through these steps:
 
 1. The interpreter parses your source code into an Abstract Syntax Tree (AST). 
 2. It then compiles this AST into bytecode using the `compile()` function and saves it in .pyc files for faster execution on subsequent runs of that module.  
 3. Finally, the PVM loads these compiled modules from disk or memory as needed to execute your program step-by-step by interpreting its bytecode instructions one at a time until completion.
+
+--------
 
 The "ghost math engine" described here indeed closely related to how mathematical operations are handled in Python, but it's not quite as simple or straightforward as a single entity like the PVM being responsible for everything behind the scenes. The reality is more nuanced and involves multiple layers of abstraction working together seamlessly under the hood.
 
